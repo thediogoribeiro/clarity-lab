@@ -19,6 +19,11 @@ page '/*.txt', layout: false
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
 # proxy(
 #   '/this-page-has-no-template.html',
 #   '/template-file.html',
@@ -40,7 +45,7 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+	activate :minify_css
+	activate :minify_javascript
+end
