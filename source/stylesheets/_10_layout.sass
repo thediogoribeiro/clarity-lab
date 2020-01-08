@@ -1,9 +1,19 @@
 @-ms-viewport
   width: device-width
 
+body
+	@media screen and (min-width: $xs) and (max-width: $smp - 1)
+		padding: 10px 10px
+	@media screen and (min-width: $smp) and (max-width: $md - 1)
+		padding: 20px 10px
+	@media screen and (min-width: $md) and (max-width: $lg - 1)
+		padding: 30px 20px
+	@media screen and (min-width: $lg)
+		padding: 40px 30px
+
+
 #navbar
-	padding: 10px 10px
-	//width: 320px
+	
 
 #intro
 

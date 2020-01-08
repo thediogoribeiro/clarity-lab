@@ -1,6 +1,6 @@
 #navbar
 	display: grid
-	grid-template-rows: 1fr
+	grid-template-rows: 200px
 	grid-template-columns: 33% 1fr 1fr 1fr 1fr
 
 	.nav__logo
@@ -9,55 +9,72 @@
 			grid-row-end: 2
 			grid-column-start: 1
 			grid-column-end: 2
-			img
-				height: 90px
-				margin-left: -30px
-				margin-top: -15px
+
+	.nav__logo img
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			height: 90px
+			margin-left: -30px
+			margin-top: -15px
+		@media screen and (min-width: $md) and (max-width: $lg - 1)
+			height: 150px
+			margin-left: -30px
+			margin-top: -15px
+		@media screen and (min-width: $lg)
+			height: 180px
+			margin-left: -30px
+			margin-top: -15px
 
 	.nav__button-1
-		@media screen and (min-width: $m)
+		@media screen and (min-width: $lg)
 			grid-row-start: 1
 			grid-row-end: 2
 			grid-column-start: 2
 			grid-column-end: 3
 
 	.nav__button-2
-		@media screen and (min-width: $m)		
+		@media screen and (min-width: $lg)		
 			grid-row-start: 1
 			grid-row-end: 2
 			grid-column-start: 3
 			grid-column-end: 4
 
 	.nav__button-3
-		@media screen and (min-width: $m)
+		@media screen and (min-width: $lg)
 			grid-row-start: 1
 			grid-row-end: 2
 			grid-column-start: 4
 			grid-column-end: 5
 
 	.nav__button-4
-		@media screen and (min-width: $m)
+		@media screen and (min-width: $lg)
 			grid-row-start: 1
 			grid-row-end: 2
 			grid-column-start: 5
 			grid-column-end: 6
 
+	.nav__button-1, .nav__button-2, .nav__button-3, .nav__button-4
+		margin-top: 20px
+		padding: 0 10px
+		text-align: center
+
 	.nav__menu
-		@media screen and (min-width: $xs) and (max-width: $m - 1)
+		@media screen and (min-width: $xs) and (max-width: $lg - 1)
 			grid-row-start: 1
 			grid-row-end: 2
-			grid-column-start: 5
+			grid-column-start: 4
 			grid-column-end: 6
+			text-align: right
 
 	/* Style the navigation menu */
 	.nav__menu
 	  overflow: hidden
 	  position: relative
-	  margin-left: 20px
-
+	  z-index: 100	  
+	  margin-left: 10px
+	  
 	/* Style navigation menu links */
 	.nav__menu a
-	  color: white
+	  color: $dark-blue
 	  padding: 2px 4px
 	  text-decoration: none
 	  font-size: 12px
@@ -65,17 +82,29 @@
 
 	/* Style the hamburger menu */
 	.nav__menu a.icon
-	  background: black
+	  background: $white
 	  display: block
 	  right: 0
 	  top: 0
-	  filter: invert(100%)
+	
+	.nav__menu i.fas
+		color: $dark-blue
+		padding: 0 4px
 
 	/* Add a grey background color on mouse-over */
-	.nav__menu a:hover
-	  background-color: #ddd
-	  color: black
+	.nav__menu a:hover, i.fas:hover
+	  border: 1px solid $dark-blue
 
+	/* */
+	.menu__links
+		display: none
+		text-align: right
+
+	.menu__links a
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			margin-top: 5px
+		@media screen and (min-width: $md) and (max-width: $lg - 1)
+			margin-top: 10px
 
 
 

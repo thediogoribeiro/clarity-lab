@@ -11,12 +11,22 @@
 		p.button Equipa
 	.nav__button-4.hide__sm
 		p.button Contactos
-	.nav__menu
-	  // Navigation links (Hidden)
-	  #menu__links.hide__sm.hide__lg
-	    a#news News
-	    a#contact Contact
-	    a#about About
-	  // "Hamburger menu" / "Bar icon" to toggle the navigation links 
-	  a.icon#icon onclick="showBurger()" 
-	    i.fas.fa-bars.fa-2x
+	/*
+		.dropdown
+			a.dropdown-toggle href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+				i.fas.fa-bars.fa-2x
+			.dropdown-menu aria-labelledby="dropdownMenuLink"
+	    	a.dropdown-item href="#" Action
+	    	a.dropdown-item href="#" Another action
+	    	a.dropdown-item href="#" Something else here */
+
+	.nav__menu.hide__lg
+		// "Hamburger menu" / "Bar icon" to toggle the navigation links 
+		a#icon.icon 
+	  	i.fas.fa-bars.fa-2x onclick="showBurger()"
+		#menu__links.menu__links
+			a#serviços href="#" Serviços
+			a#filosofia href="#" Filosofia
+			a#equipa href="#" Equipa
+			a#contactos href="#" Contactos
+
