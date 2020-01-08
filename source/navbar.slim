@@ -1,13 +1,22 @@
 #navbar
-	.nav-right
-		.nav__logo
-			img src=""
-	.nav-left
-		.nav__button-1
-			p Serviços
-		.nav__button-2
-			p Filosofia
-		.nav__button-3
-			p Equipa
-		.nav__button-4
-			p Contactos
+	//.nav-right
+	.nav__logo
+		img src="/images/Asset_3.png"
+	//.nav-left
+	.nav__button-1.hide__sm
+		p.button Serviços
+	.nav__button-2.hide__sm
+		p.button Filosofia
+	.nav__button-3.hide__sm
+		p.button Equipa
+	.nav__button-4.hide__sm
+		p.button Contactos
+	.nav__menu
+	  // Navigation links (Hidden)
+	  #menu__links.hide__sm.hide__lg
+	    a#news News
+	    a#contact Contact
+	    a#about About
+	  // "Hamburger menu" / "Bar icon" to toggle the navigation links 
+	  a.icon#icon onclick="showBurger()" 
+	    i.fas.fa-bars.fa-2x

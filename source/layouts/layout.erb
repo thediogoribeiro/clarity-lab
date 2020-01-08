@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Clarity Lab" %></title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a1645ab757.js" crossorigin="anonymous"></script>
+
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
