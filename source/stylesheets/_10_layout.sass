@@ -38,17 +38,20 @@
 
 #services
 	@media screen and (min-width: $xs) and (max-width: $smp - 1)
-		padding: 10px 10px
+		padding: 10px 10px 0 10px
 		margin: 40px 0 0 0
 	@media screen and (min-width: $smp) and (max-width: $md - 1)
-		padding: 20px 10px
+		padding: 20px 10px 0 10px
 		margin: 40px 0 0 0
 	@media screen and (min-width: $md) and (max-width: $lg - 1)
-		padding: 30px 20px
-		margin: 40px 0
-	@media screen and (min-width: $lg)
-		padding: 40px 30px
-		margin: 30px 0
+		padding: 30px 20px 0 20px
+		margin: 40px 0 0 0
+	@media screen and (min-width: $lg) and (max-width: $xxl - 1)
+		padding: 40px 30px 0 30px
+		margin: 30px 0 0 0
+	@media screen and (min-width: $xxl)
+		padding: 40px 30px 0 30px
+		margin: 50px 0 0 0
 
 #values
 	@media screen and (min-width: $xs) and (max-width: $smp - 1)
