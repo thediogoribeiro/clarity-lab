@@ -1,11 +1,9 @@
 #values
-	.values__panel
-		
+	//border-bottom: 2px solid $dark-blue		
 	.values__title
 		text-align: center
 
 	.values__list
-		text-align: center
 		@media screen and (min-width: $xs) and (max-width: $smp - 1)
 			margin: 20px 0
 		@media screen and (min-width: $smp) and (max-width: $md - 1)
@@ -34,15 +32,117 @@
 				width: 210px
 
 	.value-1
-		text-align: center
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			text-align: center
+		@media screen and (min-width: $md)
+			text-align: right
 
 	.value-2
-		text-align: center
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			text-align: center
+		@media screen and (min-width: $md)
+			text-align: center
 
 	.value-3
-		text-align: center
-		
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			text-align: center
+		@media screen and (min-width: $md)
+			text-align: left
 
+	.value__title-1, .value__title-2, .value__title-3
+		position: relative
+		top: -50px
+		
+.values__bg
+	@media screen and (min-width: $xs) and (max-width: $sm - 1)
+		position: relative
+		top: -655px
+		margin-bottom: -600px
+	@media screen and (min-width: $sm) and (max-width: $smp - 1)
+		position: relative
+		top: -835px
+		margin-bottom: -700px
+	@media screen and (min-width: $smp) and (max-width: $md - 1)
+		position: relative
+		top: -830px
+		margin-bottom: -750px
+	@media screen and (min-width: $md)
+		display: flex
+
+	.bg-1
+		@media screen and (min-width: $md)
+			float: left
+	.bg-2
+		@media screen and (min-width: $md) and (max-width: $lg - 1)
+			display: none
+		@media screen and (min-width: $lg)
+			float: center
+	.bg-3
+		@media screen and (min-width: $md) and (max-width: $xxl - 1)
+			display: none
+		@media screen and (min-width: $xxl)
+			float: center
+
+	img
+		position: relative
+		z-index: -10
+		@media screen and (min-width: $md) and (max-width: $lg - 1)
+			display: inline
+			top: -340px
+			height: 33vw
+		@media screen and (min-width: $lg) and (max-width: $xl - 1)
+			display: inline
+			top: -330px
+			height: 22vw
+		@media screen and (min-width: $xl) and (max-width: $xxl - 1)
+			display: inline
+			top: -370px
+			height: 20vw
+		@media screen and (min-width: $xxl)
+			display: inline
+			top: -390px
+			height: 270px
+			width: 100%
+
+	img.bg-1
+		overflow: hidden
+		@media screen and (min-width: $xs) and (max-width: $sm - 1)
+			position: relative
+			top: -130px
+			height: 60vw
+		@media screen and (min-width: $sm) and (max-width: $smp - 1)
+			position: relative
+			top: -120px
+			height: 68vw
+		@media screen and (min-width: $smp) and (max-width: $md - 1)
+			position: relative
+			top: -140px
+			height: 60vw
+	img.bg-2
+		overflow: hidden
+		@media screen and (min-width: $xs) and (max-width: $sm - 1)
+			position: relative
+			top: -65px
+			height: 60vw
+		@media screen and (min-width: $sm) and (max-width: $smp - 1)
+			position: relative
+			top: -60px
+			height: 68vw
+		@media screen and (min-width: $smp) and (max-width: $md - 1)
+			position: relative
+			top: -70px
+			height: 60vw
+	img.bg-3
+		overflow: hidden
+		@media screen and (min-width: $xs) and (max-width: $sm - 1)
+			position: relative
+			height: 60vw
+		@media screen and (min-width: $sm) and (max-width: $smp - 1)
+			position: relative
+			height: 68vw
+		@media screen and (min-width: $smp) and (max-width: $md - 1)
+			position: relative
+			height: 60vw
 
 
 
