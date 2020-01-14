@@ -10,6 +10,23 @@ function showBurger() {
   }
 }
 
+/*
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 400) {
+      $('.test').removeClass('blue');
+    } else if (ww >= 401) {
+      $('.test').addClass('blue');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+*/
 
 /*
 function active1() {
