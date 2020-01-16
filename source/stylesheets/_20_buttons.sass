@@ -3,13 +3,20 @@
 	border-radius: 8px
 	color: $dark-blue
 
-.button:hover
-	background-color: $dark-blue
-	color: $white
+#navbar, .team__list
+	.button:hover
+		background-color: $dark-blue
+		color: $white
+
 
 .nav__button-1, .nav__button-2, .nav__button-3, .nav__button-4
+	flex-flow: row
+	width: 100%
 	.button
-		padding: 5px 20px
+		flex-grow: 1
+		height: 35px
+		padding-top: 2px
+
 
 #services
 	.button 
