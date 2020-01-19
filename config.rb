@@ -24,6 +24,26 @@ configure :development do
   activate :livereload
 end
 
+
+#image_optim = ImageOptim.new
+
+#image_optim = ImageOptim.new(:svgo => false)
+
+#image_optim = ImageOptim.new(:nice => 20)
+
+#image_optim.optimize_images(Dir['/source/images/*.png']) do |unoptimized, optimized|
+#  if optimized
+#    puts "#{unoptimized} => #{optimized}"
+#  end
+#end
+
+#image_optim.optimize_images!(Dir['/source/images/*.*'])
+
+#image_optim.optimize_images_data(datas)
+
+
+
+
 # proxy(
 #   '/this-page-has-no-template.html',
 #   '/template-file.html',
