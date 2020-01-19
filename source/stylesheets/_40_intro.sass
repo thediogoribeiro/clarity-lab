@@ -1,5 +1,14 @@
 #intro
 	border-bottom: 2px solid $dark-blue
+	//@media screen and (min-width: $md)
+	height: 100vh
+	width: 100%
+	.image__panel
+		position: absolute
+		bottom: 0
+	//display: flex
+	//flex-direction: column
+	//align-items: flex-end
 
 	ol.image__list
 		padding-left: 0
@@ -38,27 +47,27 @@
 		text-align: center
 		height: auto
 		@media screen and (min-width: $xs) and (max-width: $sm - 1)
-			width: 250px
-			margin-top: 50px
-			padding-left: 25px
+			width: 280px //250
+			margin-top: 23px // 50
+			left: -5px // padding-left: 25px
 		@media screen and (min-width: $sm) and (max-width: $smp - 1)
-			width: 280px
-			margin-top: 43px
-			margin-left: 23px
+			width: 320px // 280
+			margin-top: 23px // 43
+			margin-left: 0px // 23
 		@media screen and (min-width: $smp) and (max-width: $md - 1)
-			width: 400px
-			margin-top: 47px
-			padding-right: 27px
-			left: -15px
+			width: 420px // 400
+			margin-top: 42px // 47
+			padding-right: 37px // 27
+			left: -25px
 		@media screen and (min-width: $md) and (max-width: $lg - 1)
 			width: 600px
 			margin-top: 69px
 			margin-left: 20px
 			right: -20px
 		@media screen and (min-width: $lg) and (max-width: $xl - 1)
-			width: 860px
-			margin-top: 99px
-			margin-left: 20px
+			width: 920px // 860
+			margin-top: 70px // 99
+			margin-left: -15px // 20
 		@media screen and (min-width: $xl) and (max-width: $xxl - 1)
 			width: 900px
 			margin-top: 104px
