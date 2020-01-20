@@ -1,4 +1,9 @@
 #navbar
+	position: absolute
+	width: 100%
+	z-index: 2
+
+.navbar
 	display: grid
 	grid-template-rows: 200px
 	grid-template-columns: 33% 1fr 1fr 1fr 1fr
@@ -9,6 +14,7 @@
 			grid-row-end: 2
 			grid-column-start: 1
 			grid-column-end: 2
+			align-self: start
 
 	.nav__logo img
 		@media screen and (min-width: $xs) and (max-width: $md - 1)
@@ -30,6 +36,7 @@
 			grid-row-end: 2
 			grid-column-start: 2
 			grid-column-end: 3
+			align-self: start
 
 	.nav__button-2
 		@media screen and (min-width: $lg)		
@@ -37,6 +44,7 @@
 			grid-row-end: 2
 			grid-column-start: 3
 			grid-column-end: 4
+			align-self: start
 
 	.nav__button-3
 		@media screen and (min-width: $lg)
@@ -44,6 +52,7 @@
 			grid-row-end: 2
 			grid-column-start: 4
 			grid-column-end: 5
+			align-self: start
 
 	.nav__button-4
 		@media screen and (min-width: $lg)
@@ -51,6 +60,7 @@
 			grid-row-end: 2
 			grid-column-start: 5
 			grid-column-end: 6
+			align-self: start
 
 	.nav__button-1, .nav__button-2, .nav__button-3, .nav__button-4
 		margin-top: 20px
@@ -64,6 +74,7 @@
 			grid-column-start: 4
 			grid-column-end: 6
 			text-align: right
+			align-self: start
 
 	/* Style the navigation menu */
 	.nav__menu

@@ -1,27 +1,28 @@
-#navbar.container
-	//.nav-right
-	.nav__logo
-		img src="/images/Asset_3.png"
-	//.nav-left
-	.nav__button-1.hide__sm
-		a.button href='#servicos'
-			| Serviços 
-	.nav__button-2.hide__sm
-		a.button href='#valores'
-			| Filosofia 
-	.nav__button-3.hide__sm
-		a.button href='#equipa' 
-			| Equipa
-	.nav__button-4.hide__sm
-		a.button href='#contactos'
-			| Contactos
-	.nav__menu.hide__lg
-		// "Hamburger menu" / "Bar icon" to toggle the navigation links 
-		a#icon.icon 
-	  	i.fas.fa-bars.fa-2x onclick="showBurger()"
-		#menu__links.menu__links
-			a href="#servicos" Serviços
-			a href="#valores" Filosofia
-			a href="#equipa" Equipa
-			a href="#contactos" Contactos
+#navbar
+	.navbar.container
+		//.nav-right
+		.nav__logo
+			img src="/images/Asset_3.png"
+		//.nav-left
+		.nav__button-1.hide__sm.align-top
+			a.button href='#servicos'
+				| Serviços 
+		.nav__button-2.hide__sm
+			a.button href='#valores'
+				| Filosofia 
+		.nav__button-3.hide__sm
+			a.button href='#equipa' 
+				| Equipa
+		.nav__button-4.hide__sm
+			a.button href='#contactos'
+				| Contactos
+		.nav__menu.hide__lg
+			// "Hamburger menu" / "Bar icon" to toggle the navigation links 
+			a#icon.icon 
+		  	i.fas.fa-bars.fa-2x onclick="showBurger()"
+			#menu__links.menu__links
+				a href="#servicos" Serviços
+				a href="#valores" Filosofia
+				a href="#equipa" Equipa
+				a href="#contactos" Contactos
 
