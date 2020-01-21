@@ -3,10 +3,10 @@
 	width: 100%
 	z-index: 2
 
-.navbar
-	display: grid
-	grid-template-rows: 200px
-	grid-template-columns: 33% 1fr 1fr 1fr 1fr
+	.navbar
+		display: grid
+		grid-template-rows: 200px
+		grid-template-columns: 33% 1fr 1fr 1fr 1fr
 
 	.nav__logo
 		@media screen and (min-width: $xs)
@@ -25,10 +25,16 @@
 			height: 150px
 			margin-left: -15px
 			margin-top: -5px
-		@media screen and (min-width: $lg)
-			height: 180px
+		@media screen and (min-width: $lg) and (max-width: $xl - 1)
+			height: 150px
 			margin-left: -15px
 			margin-top: -5px
+		@media screen and (min-width: $xl)
+			height: 150px
+			width: auto
+			margin-left: -15px
+			margin-top: -5px
+
 
 	.nav__button-1
 		@media screen and (min-width: $lg)
