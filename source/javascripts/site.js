@@ -10,6 +10,7 @@ function showBurger() {
   }
 }
 
+
 /*
 jQuery(document).ready(function($) {
   var alterClass = function() {

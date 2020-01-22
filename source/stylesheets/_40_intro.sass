@@ -4,91 +4,87 @@
 	width: 100%
 
 	.image__panel
-		display: block
 		margin: auto
 		text-align: center
+		@media screen and (min-width: $md)
+			display: grid
+			grid-template-rows: 1fr 1fr
+			grid-template-columns: 1fr
+			height: 100vh
+			padding-bottom: 2px
+
 		
 	.image__carousel
-		position: absolute
-		bottom: 0
-
-	//.carousel-indicators
-		//text-align: center
-
-
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			position: absolute
+			bottom: 0
+			left: 0
+		@media screen and (min-width: $md)
+			grid-row-start: 2
+			grid-row-end: 3
+			grid-column-start: 1
+			grid-column-end: 2
+			align-self: end
+		
 	ol.image__list
 		padding-left: 0
 		padding-right: 0
 		margin-bottom: 0
 
+	.image__list
+		@media screen and (min-width: $md)
+			display: grid
+			grid-template-rows: 1fr
+			grid-template-columns: 1fr
+
 	.image-1
 		text-align: center
 		height: auto
-		@media screen and (min-width: $xs) and (max-width: $sm - 1)
-			width: 280px
-			padding-left: 15px
-			left: -15px
-		@media screen and (min-width: $sm) and (max-width: $smp - 1)
-			width: 320px
-			padding-left: 22px
-		@media screen and (min-width: $smp) and (max-width: $md - 1)
-			width: 380px
-			left: -10px
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			width: 100%
+
+		@media screen and (min-width: $md)
+			grid-row-start: 1
+			grid-row-end: 2
+			grid-column-start: 1
+			grid-column-end: 2
+			align-self: end
+			position: relative
+			z-index: 10 
 		@media screen and (min-width: $md) and (max-width: $lg - 1)
-			width: 600px
-			margin-left: 40px
+			padding: 0 40px
 		@media screen and (min-width: $lg) and (max-width: $xl - 1)
-			width: 860px
-			margin-left: 25px
-		@media screen and (min-width: $xl) and (max-width: $xxl - 1)
-			width: 900px
-			margin-left: 50px
-			right: -40px
-		@media screen and (min-width: $xxl)
-			width: 1000px
-			margin-left: 20px
-			right: -40px
+			padding: 0 70px
+		@media screen and (min-width: $xl)
+			padding: 0 150px
+		
 
 	.image-2
 		text-align: center
 		height: auto
-		@media screen and (min-width: $xs) and (max-width: $sm - 1)
-			width: 280px //250
-			margin-top: 23px // 50
-			left: -5px // padding-left: 25px
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			width: 100%
+		@media screen and (min-width: $xs) and (max-width: 360px - 1)
+			margin-top: 36px
+		@media screen and (min-width: 360px) and (max-width: $sm - 1)
+			margin-top: 41.5px
 		@media screen and (min-width: $sm) and (max-width: $smp - 1)
-			width: 320px // 280
-			margin-top: 23px // 43
-			margin-left: 0px // 23
+			margin-top: 43px
 		@media screen and (min-width: $smp) and (max-width: $md - 1)
-			width: 420px // 400
-			margin-top: 42px // 47
-			padding-right: 37px // 27
-			left: -25px
+			margin-top: 47px
+
+		@media screen and (min-width: $md)
+			grid-row-start: 1
+			grid-row-end: 2
+			grid-column-start: 1
+			grid-column-end: 2
+			align-self: end
 		@media screen and (min-width: $md) and (max-width: $lg - 1)
-			width: 600px
-			margin-top: 69px
-			margin-left: 20px
-			right: -20px
+			padding: 0 30px
 		@media screen and (min-width: $lg) and (max-width: $xl - 1)
-			width: 920px // 860
-			margin-top: 70px // 99
-			margin-left: -15px // 20
-		@media screen and (min-width: $xl) and (max-width: $xxl - 1)
-			width: 900px
-			margin-top: 104px
-			margin-left: 35px
-			position: relative
-			right: -55px
-		@media screen and (min-width: $xxl)
-			width: 900px
-			margin-top: 165px
-			right: -90px
-
-
-
-
-
+			padding: 0 60px
+		@media screen and (min-width: $xl)
+			padding: 0 120px
 
 
 
