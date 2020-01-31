@@ -10,6 +10,5 @@ gem 'slim'
 gem 'middleman-minify-html'
 gem 'middleman-sprockets'
 gem 'bootstrap', '~> 4.3.1'
-gem 'image_optim'
-gem 'image_optim_pack'
+gem "middleman-imageoptim"
 

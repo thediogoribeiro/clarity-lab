@@ -24,12 +24,15 @@ configure :development do
   activate :livereload
 end
 
+activate :imageoptim
 
 #image_optim = ImageOptim.new
 
-#image_optim = ImageOptim.new(:svgo => false)
+#image_optim = ImageOptim.new(:pngout => false)
 
 #image_optim = ImageOptim.new(:nice => 20)
+
+#image_optim.optimize_image!('/images/*.png')
 
 #image_optim.optimize_images(Dir['/source/images/*.png']) do |unoptimized, optimized|
 #  if optimized
