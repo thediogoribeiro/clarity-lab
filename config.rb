@@ -24,7 +24,7 @@ configure :development do
   activate :livereload
 end
 
-activate :imageoptim
+#activate :imageoptim
 
 #image_optim = ImageOptim.new
 
