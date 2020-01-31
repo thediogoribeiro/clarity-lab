@@ -10,12 +10,25 @@
 		
 	.city__image
 		padding: 0
-		max-height: 180px
+		@media screen and (min-width: $xs) and (max-width: $md - 1)
+			max-height: 180px
+		@media screen and (min-width: $md) and (max-width: $lg - 1)
+			max-height: 334px
+		@media screen and (min-width: $lg) and (max-width: $xl - 1)
+			max-height: 445px
+		@media screen and (min-width: $xl) and (max-width: $xxl - 1)
+			max-height: 556px
+		@media screen and (min-width: $xxl)
+			max-height: 680px //626px
 
 	img.city__image
 		@media screen and (min-width: $xs) and (max-width: $md - 1)
 			height: auto
 			width: 100%
+		@media screen and (min-width: $md)
+			height: auto
+			width: 100%
+			
 
 
 
