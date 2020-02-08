@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
   // handle the form submission event
 
-  form.addEventListener("Enviar", function(ev) {
+  form.addEventListener("Send", function(ev) {
     ev.preventDefault();
     var data = new FormData(form);
     ajax(form.method, form.action, data, success, error);
