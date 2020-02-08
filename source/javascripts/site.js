@@ -32,11 +32,19 @@ window.addEventListener("DOMContentLoaded", function() {
 
   // handle the form submission event
 
-  form.addEventListener("Send", function(ev) {
+  /*form.addEventListener("Send", function(ev) {
     ev.preventDefault();
     var data = new FormData(form);
     ajax(form.method, form.action, data, success, error);
-  });
+  });*/
+
+  getElementById("contacts__btn").addEventListener("Click", function(ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });  
+
+
 });
 
 // helper function for sending an AJAX request
