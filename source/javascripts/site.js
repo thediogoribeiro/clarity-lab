@@ -10,7 +10,7 @@ function showBurger() {
   }
 }
 
-$('contacts__form').submit(function(e)) {
+$('contacts__form').submit(function(e) {
 
   var form = document.getElementById("contacts__form");
   var email = document.getElementById("contacts__input");
@@ -30,7 +30,7 @@ $('contacts__form').submit(function(e)) {
     $(this).get(0).reset()
     alert.success("Enviado com sucesso")
   }
-}
+})
 
 
 
